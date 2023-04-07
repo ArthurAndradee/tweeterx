@@ -1,6 +1,18 @@
 import React from 'react';
 
-import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles';
+import ProfilePage from "../ProfilePage"
+
+import { 
+    Container, 
+    Header, 
+    BackIcon, 
+    ProfileInfo, 
+    BottomMenu, 
+    HomeIcon, 
+    SearchIcon, 
+    BellIcon, 
+    EmailIcon,
+} from './styles';
 
 export const Main: React.FC = () => {
   return (
@@ -16,10 +28,10 @@ export const Main: React.FC = () => {
             </ProfileInfo>
         </Header>
 
-        {/* <ProfilePage /> */}
+        <ProfilePage />
 
         <BottomMenu>
-            <HomeIcon />
+            <HomeIcon className='active'/>
             <SearchIcon />
             <BellIcon />
             <EmailIcon />
