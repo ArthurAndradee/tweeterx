@@ -106,7 +106,7 @@ export const CakeIcon = styled(Cake)`
 export const Followage = styled.div`
     display: flex;
 
-    > span {
+    > span 
         font-size: 15px;
         color: var(--gray);
 
