@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Feed from '../Feed';
+
 import { 
     Container, 
     Banner, 
@@ -7,7 +9,8 @@ import {
     ProfileData, 
     LocationIcon, 
     CakeIcon, 
-    Followage 
+    Followage,
+    EditButton, 
 } from './styles';
 
 const ProfilePage: React.FC = () => {
@@ -18,7 +21,7 @@ const ProfilePage: React.FC = () => {
         </Banner>
 
         <ProfileData>
-            {/* <EditButton outlined>Editar perfil</EditButton> */}
+            <EditButton outline>Editar perfil</EditButton>
 
             <h1>Arthur Andrade</h1>
             <h2>@arthurandradee</h2>
@@ -40,13 +43,15 @@ const ProfilePage: React.FC = () => {
 
             <Followage>
                 <span>
-                    seguindo <strong>438</strong>
+                    seguindo <strong>438 </strong>
                 </span>
                 <span>
                     <strong>4 </strong> seguidores
                 </span>
             </Followage>
         </ProfileData>
+
+        <Feed />
     </Container>
   )
 }
